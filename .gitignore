@@ -1,0 +1,6 @@
+*.kra
+*.*~
+blob_storage/
+VideoDecodeStats/
+webrtc_event_logs/
+*.log
