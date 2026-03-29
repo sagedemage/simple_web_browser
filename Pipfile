@@ -5,7 +5,7 @@ name = "pypi"
 
 [packages]
 cefpython3 = "*"
-PySide2 = "*"
+PySide6 = "*"
 
 [dev-packages]
 

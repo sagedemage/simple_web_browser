@@ -4,10 +4,10 @@ import os
 import platform
 import sys
 from pathlib import Path
-import PySide2
-from PySide2 import QtCore
-from PySide2 import QtGui
-from PySide2 import QtWidgets
+import PySide6
+from PySide6 import QtCore
+from PySide6 import QtGui
+from PySide6 import QtWidgets
 
 WindowUtils = cef.WindowUtils()
 
@@ -29,7 +29,7 @@ def main():
     main_window.show()
     main_window.activateWindow()
     main_window.raise_()
-    app.exec_()
+    app.exec()
     if not cef.GetAppSetting("external_message_pump"):
         app.stopTimer()
     del main_window
@@ -42,7 +42,7 @@ def check_versions():
     print("[qt.py] Python {ver} {arch}".format(
             ver=platform.python_version(), arch=platform.architecture()[0]))
     print("[qt.py] PySide2 {v1} (qt {v2})".format(
-              v1=PySide2.__version__, v2=QtCore.__version__))
+              v1=PySide6.__version__, v2=QtCore.__version__))
 
 class MainWindow(QtWidgets.QMainWindow):
         def __init__(self, title: str):
