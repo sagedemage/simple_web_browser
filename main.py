@@ -157,6 +157,8 @@ class CefApplication(QtWidgets.QApplication):
         if not cef.GetAppSetting("external_message_pump"):
             self.timer = self.createTimer()
         self.setupIcon("logo")
+        # set the application’s GUI style to light or dark mode depending on the system
+        self.setStyle("Fusion")
     
     def createTimer(self):
         timer = QtCore.QTimer()
