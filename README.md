@@ -19,7 +19,7 @@ Check for dependency issues
 poetry run deptry .
 ```
 
-Use Python3.9 for Poetry
+Use Python3.9 for Poetry on Windows
 ```
-poetry env use C:\Users\salsa\AppData\Local\Programs\Python\Python39\python.exe
+poetry env use C:\Users\<username>\AppData\Local\Programs\Python\Python39\python.exe
 ```
