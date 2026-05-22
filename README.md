@@ -6,10 +6,20 @@ Simple web browser written in Python using the cefpython3 and PySide2 libraries.
 # Setup
 Install dependencies
 ```
-pipenv install
+poetry install
 ```
 
 Run program
 ```
-pipenv run python .\main.py
+poetry run python .\main.py
+```
+
+Check for dependency issues
+```
+poetry run deptry .
+```
+
+Use Python3.9 for Poetry
+```
+poetry env use C:\Users\salsa\AppData\Local\Programs\Python\Python39\python.exe
 ```

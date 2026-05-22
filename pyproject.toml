@@ -1,0 +1,24 @@
+[project]
+name = "simple_web_browser"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Salmaan Saeed"}
+]
+readme = "README.md"
+requires-python = ">=3.9,<3.10"
+dependencies = [
+    "cefpython3 (>=66.1,<67.0)",
+    "pyside6 (>=6.10.3,<7.0.0)"
+]
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+package-mode = false
+[dependency-groups]
+dev = [
+    "deptry (==0.23.1)"
+]
